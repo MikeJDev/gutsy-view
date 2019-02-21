@@ -40,7 +40,7 @@ class App extends React.Component {
 
   componentDidMount() {
     window.addEventListener('changeID', (event) => {
-      this.setState({id: event.detail});
+      this.setState({id: event.detail[0]});
       console.log('event:', event.detail)
     }, false);
     this.getData();
