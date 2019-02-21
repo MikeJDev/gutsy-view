@@ -37,6 +37,9 @@ class App extends React.Component {
   }
 
   componentDidMount() {
+    window.addEventListener('changeID', (event) => {
+      this.setState({ id: event.detail });
+    }, false);
     this.getData()
   }
 
