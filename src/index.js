@@ -45,7 +45,6 @@ class App extends React.Component {
 
   componentDidUpdate(prevProps, prevState) {
     if (prevState.id !== this.state.id) {
-      console.log('didUpdate here', this.state.id)
       this.getData()
     }
   }
