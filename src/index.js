@@ -71,8 +71,8 @@ const midView = {
     flexDirection: 'row'
   }
   const mainView = {
-    border: '2.5px solid black',
-    borderHeight: '5px',
+    // border: '2.5px solid black',
+    // borderHeight: '5px',
     padding: '20px',
     align: 'center'
   }
