@@ -25,7 +25,7 @@ class App extends React.Component {
         console.log('response:', response)
         let trip = response.data
         this.setState({
-           id: trip[this.state.id].id,
+           id: trip[this.state.id].id - 10,
           title: trip[id].title,
           image_URL: trip[id].image_URL,
           category: trip[id].category,
