@@ -23,7 +23,7 @@ class App extends React.Component {
       .then((response) => {
         let trip = response.data
         this.setState({
-          // id: trip[this.state.id].id,
+          id: trip[this.state.id].id,
           title: trip[this.state.id].title,
           image_URL: trip[this.state.id].image_URL,
           category: trip[this.state.id].category,
@@ -38,8 +38,9 @@ class App extends React.Component {
 
   componentDidMount() {
     window.addEventListener('changeID', (event) => {
-      this.setState({id: event.detail}, () => this.getData.bind(this));
+      this.setState({id: event.detail});
     }, false);
+    this.getData();
   }
 
   componentDidUpdate(prevProps, prevState) {
