@@ -22,10 +22,8 @@ class App extends React.Component {
     const id = this.state.id - 10
     axios.get(`${server}/databaseRetrievalOnLoad`)
       .then((response) => {
-        console.log('response:', response)
         let trip = response.data
         this.setState({
-          // id: trip[id],
           title: trip[id].title,
           image_URL: trip[id].image_URL,
           category: trip[id].category,
@@ -41,7 +39,6 @@ class App extends React.Component {
   componentDidMount() {
     window.addEventListener('changeID', (event) => {
       this.setState({id: event.detail[0]});
-      console.log('event:', event.detail)
     }, false);
     this.getData();
   }
