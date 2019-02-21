@@ -10,7 +10,7 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      id: 0,
+      id: 10,
       title: '',
       category: '',
       description: '',
@@ -25,7 +25,7 @@ class App extends React.Component {
         console.log('response:', response)
         let trip = response.data
         this.setState({
-           id: trip[this.state.id].id - 10,
+           id: trip[id].id,
           title: trip[id].title,
           image_URL: trip[id].image_URL,
           category: trip[id].category,
