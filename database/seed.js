@@ -9,10 +9,7 @@ db.Gutsydb.remove({})
       console.log('successfully seeded db')
     })
   }).catch(err => console.log('error'))
-// console.log(db)
 console.log(data)
-
-//if i want to insert one use findOneAndUpdate
 
 
 
