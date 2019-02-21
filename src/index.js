@@ -10,7 +10,7 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      id: 0,
+      id: 10,
       title: '',
       category: '',
       description: '',
