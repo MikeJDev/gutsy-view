@@ -19,13 +19,13 @@ class App extends React.Component {
   }
 
   getData() {
-    const id = this.state.id - 10
+    const id = this.state.id
     axios.get(`${server}/databaseRetrievalOnLoad`)
       .then((response) => {
         console.log('response:', response)
         let trip = response.data
         this.setState({
-          // id: trip[this.state.id].id,
+           id: trip[this.state.id].id,
           title: trip[id].title,
           image_URL: trip[id].image_URL,
           category: trip[id].category,
