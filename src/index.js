@@ -4,6 +4,8 @@ import RenderPicture from './components/picView.js';
 import TitleView from './components/titleView.js';
 import axios from 'axios'
 
+const server = process.env.AXIOS_LOCATION || 'ec2-3-17-152-133.us-east-2.compute.amazonaws.com'
+
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -17,7 +19,7 @@ class App extends React.Component {
   }
 
   getData() {
-    axios.get('/databaseRetrievalOnLoad')
+    axios.get(`${server}/databaseRetrievalOnLoad`)
       .then((response) => {
         console.log('success client axios request', response)
         let trip = response.data
