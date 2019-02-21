@@ -19,7 +19,7 @@ class App extends React.Component {
   }
 
   getData() {
-    const id = this.state.id + 10
+    // const id = this.state.id + 10
     axios.get(`${server}/databaseRetrievalOnLoad`)
       .then((response) => {
         console.log('response:', response)
@@ -47,7 +47,7 @@ class App extends React.Component {
 
   componentDidUpdate(prevProps, prevState) {
     if (prevState.id !== this.state.id) {
-      console.log('didUpdate here')
+      console.log('didUpdate here', this.state.id)
       this.getData()
     }
   }
