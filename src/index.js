@@ -5,7 +5,6 @@ import TitleView from './components/titleView.js';
 import axios from 'axios'
 
 const server = process.env.AXIOS_LOCATION || 'http://ec2-3-17-152-133.us-east-2.compute.amazonaws.com';
-console.log(server);
 
 class App extends React.Component {
   constructor(props) {
