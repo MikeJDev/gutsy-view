@@ -11,7 +11,7 @@ module.exports = {
       ref: 'origin/master',
       repo: 'https://github.com/MikeJDev/gutsy-view.git',
       path: '/home/ubuntu/server',
-      'post-deploy': 'npm start-prod'
+      'post-deploy': 'node /home/ubuntu/server/current/server/server.js'
     }
   }
 }

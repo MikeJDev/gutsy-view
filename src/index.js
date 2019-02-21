@@ -21,7 +21,6 @@ class App extends React.Component {
   getData() {
     axios.get(`${server}/databaseRetrievalOnLoad`)
       .then((response) => {
-        console.log('success client axios request', response)
         let trip = response.data
         this.setState({
           id: trip[this.state.id].id,
