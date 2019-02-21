@@ -10,7 +10,7 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      id: 10,
+      id: 0,
       title: '',
       category: '',
       description: '',
@@ -46,7 +46,7 @@ class App extends React.Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    if (prevState.id !== this.state.id) {
+    if (prevState.id === this.state.id) {
       console.log('didUpdate here', this.state.id)
       this.getData()
     }
