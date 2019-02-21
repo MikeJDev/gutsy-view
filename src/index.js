@@ -45,6 +45,7 @@ class App extends React.Component {
 
   componentDidUpdate(prevProps, prevState) {
     if (prevState === this.state) {
+      console.log('didUpdate here')
       this.getData()
     }
   }
