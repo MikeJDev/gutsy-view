@@ -19,7 +19,7 @@ const TitleView = (props) => {
           </div> 
         <div>
       </div><br/>
-      <button id="book" style={button} onClick={addToCart}>Book Now</button>
+      <button id="book" style={button} onClick={addToCart(1)}>Book Now</button>
       </div>
       <div style={{marginLeft: '5px'}}>
         <ul>
