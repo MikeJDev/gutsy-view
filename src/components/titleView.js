@@ -36,7 +36,7 @@ const textSize = {
 }
 const button = {
   margin: 'px',
-  backgroundColor: 'rgba(0, 0, 0, 0.12)',
+  backgroundColor: '#242121',
   borderColor: 'white',
   borderRadius: '5px',
   color: 'white',
