@@ -2,6 +2,7 @@ import React from 'react'
 
 const addToCart = (item) => () => {
   const event = new CustomEvent('addToCart', { detail: item });
+  console.log('this is dispatch')
   window.dispatchEvent(event);
 }
 
