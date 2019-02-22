@@ -6,7 +6,9 @@ const TitleView = (props) => {
       <div style={titleView}>
         <h2>{props.title}</h2>
         <h4>Description:</h4>
+        <div style={fontFamily}>
         <p>{props.description}</p>
+        </div>
           <div style={textSize}>
             Price: ${props.price}
           </div> 
@@ -30,6 +32,9 @@ const titleView = {
   width: '600px',
   height: '350px',
   padding: '10px'
+}
+const fontFamily = {
+  fontFamily: 'Roboto'
 }
 const textSize = {
   fontSize: '25px'
