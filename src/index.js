@@ -41,7 +41,7 @@ class App extends React.Component {
       this.setState({id: event.detail[0]});
     }, false);
     this.getData();
-  }
+  } 
 
   componentDidUpdate(prevProps, prevState) {
     if (prevState.id !== this.state.id) {
