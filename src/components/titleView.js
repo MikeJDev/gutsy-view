@@ -1,5 +1,10 @@
 import React from 'react'
 
+const addToCart = (item) => () => {
+  const event = new CustomEvent('addToCart', { detail: item });
+  window.dispatchEvent(event);
+}
+
 const TitleView = (props) => {
   return (
     <div>
@@ -14,7 +19,7 @@ const TitleView = (props) => {
           </div> 
         <div>
       </div><br/>
-      <button id="book" style={button}>Book Now</button>
+      <button id="book" style={button} onClick={addToCart}>Book Now</button>
       </div>
       <div style={{marginLeft: '5px'}}>
         <ul>
