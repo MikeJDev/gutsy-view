@@ -5,7 +5,7 @@ const TitleView = (props) => {
   
   const addToCart = (item) => () => {
     const event = new CustomEvent('addToCart', { detail: item });
-    console.log('this is dispatch', detail.item)
+    console.log('this is dispatch', item)
     window.dispatchEvent(event);
   }
   return (
