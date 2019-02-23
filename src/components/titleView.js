@@ -39,9 +39,6 @@ const titleView = {
   height: '350px',
   padding: '10px'
 }
-const fontFamily = {
-  fontFamily: 'Roboto'
-}
 const textSize = {
   fontSize: '25px'
 }
