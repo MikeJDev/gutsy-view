@@ -55,7 +55,7 @@ class App extends React.Component {
         <div style={midView}>
           <div style={picTitleView}>
             <RenderPicture url={this.state.image_URL}/> 
-            <TitleView title={this.state.title} description={this.state.description} price={this.state.price}/>
+            <TitleView title={this.state.title} description={this.state.description} price={this.state.price} id={this.state.id}/>
           </div>
         </div>
       </div>
