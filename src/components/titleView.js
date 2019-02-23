@@ -12,7 +12,7 @@ const TitleView = (props) => {
       <div style={titleView}>
         <h2>{props.title}</h2>
         <h4>Description:</h4>
-        <div style={fontFamily}>
+        <div>
         <p>{props.description}</p>
         </div>
           <div style={textSize}>
