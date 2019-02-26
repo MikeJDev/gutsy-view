@@ -4,7 +4,7 @@ import RenderPicture from './components/picView.js';
 import TitleView from './components/titleView.js';
 import axios from 'axios'
 
-const server = process.env.AXIOS_LOCATION || 'http://ec2-3-17-152-133.us-east-2.compute.amazonaws.com';
+const server = process.env.AXIOS_LOCATION || 'http://ec2-18-218-141-127.us-east-2.compute.amazonaws.com';
 
 class App extends React.Component {
   constructor(props) {
